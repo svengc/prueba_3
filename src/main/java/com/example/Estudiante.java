@@ -27,7 +27,7 @@ public class Estudiante {
     public void setEdad(int edad) {
         if (edad >= 1) {
             this.edad = edad;
-        } else if (edad == 0) {
+        } else if (edad <= 0) {
             this.edad = edad;
             System.out.println("La edad debe de ser mayor a 0");
         }
