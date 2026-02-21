@@ -25,7 +25,7 @@ public class Estudiante {
         return edad;
     }
     public void setEdad(int edad) {
-        if (edad >= 1) {
+        if (edad > 0) {
             this.edad = edad;
         } else if (edad <= 0) {
             this.edad = edad;
