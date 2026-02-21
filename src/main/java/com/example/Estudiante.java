@@ -12,12 +12,7 @@ public class Estudiante {
     }
     public Estudiante(String nombre, int edad, double promedio) {
         this.nombre = nombre;
-        if (edad > 0) {
-            this.edad = edad;
-        } else {
-            this.edad = edad;
-            System.out.println("La edad debe de ser mayor a 0");
-        }
+        this.edad = edad;
         this.promedio = promedio;
     }
     public String getNombre() {
@@ -30,7 +25,13 @@ public class Estudiante {
         return edad;
     }
     public void setEdad(int edad) {
-        this.edad = edad;
+        if (edad > 0) {
+            this.edad = edad;
+        } else {
+            this.edad = edad;
+            System.out.println("La edad debe de ser mayor a 0");
+        }
+        
     }
     public double getPromedio() {
         return promedio;
