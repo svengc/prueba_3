@@ -23,8 +23,8 @@ public class Libro {
     }
 
     public void mostrarDetalles(){
-        System.out.println("Título: " + titulo);
+        System.out.println("Libro: " + titulo);
         System.out.println("Autor: " + autor);
-        System.out.println("Número de páginas: " + paginas);
+        System.out.println("Páginas: " + paginas);
     }
 }

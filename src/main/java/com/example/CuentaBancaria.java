@@ -31,16 +31,16 @@ public class CuentaBancaria {
         if (cantidad > 0) {
             saldo += cantidad;
         } else {
-            System.out.println("Su nuevo saldo es: " + saldo);
+            System.out.println("La cantidad a depositar debe ser mayor a 0");
         }
     }
 
     public void retirar(double cantidad) {
-        if (cantidad < saldo) {
+        if (cantidad <= saldo) {
             saldo -= cantidad;
         } else if (cantidad > saldo) {
             System.out.println("Fondos insuficientes para retirar " + cantidad);
-
+            
         }
     }
 }

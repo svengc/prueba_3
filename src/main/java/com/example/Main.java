@@ -29,7 +29,7 @@ public class Main {
         System.out.println();
         Estudiante estudiante1 = new Estudiante("Cristian", 0, 2.5);
         System.out.println();
-        estudiante1.mostrarInformacion();
+        estudiante1.mostrarInfo();
 
     }
 }
