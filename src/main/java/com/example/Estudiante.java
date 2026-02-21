@@ -28,7 +28,6 @@ public class Estudiante {
         if (edad > 0) {
             this.edad = edad;
         } else if (edad <= 0) {
-            this.edad = edad;
             System.out.println("La edad debe de ser mayor a 0");
         }
         
