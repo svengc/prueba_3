@@ -10,6 +10,21 @@ public class Main {
         System.out.println();
         Libro libro3 = new Libro("De mi, Para mi", "Nacarid Portal", 473);
         libro3.mostrarDetalles();
-       
+        System.out.println();
+        System.out.println("-----------------------------");
+        System.out.println();
+        CuentaBancaria cuenta1 = new CuentaBancaria("Juan Perez", 1000);
+        System.out.println("Titular: " + cuenta1.getTitular());
+        System.out.println("Saldo inicial: " + cuenta1.getSaldo());
+        System.out.println();
+        System.out.println("Depositando 500...");
+        cuenta1.depositar(500);
+        System.out.println(cuenta1.getSaldo());
+        System.out.println();
+        System.out.println("Retirando 200...");
+        cuenta1.retirar(200);
+        System.out.println(cuenta1.getSaldo());
+
+
     }
 }
