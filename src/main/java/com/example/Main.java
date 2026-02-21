@@ -24,7 +24,12 @@ public class Main {
         System.out.println("Retirando 200...");
         cuenta1.retirar(200);
         System.out.println(cuenta1.getSaldo());
-
+        System.out.println();
+        System.out.println("-----------------------------");
+        System.out.println();
+        Estudiante estudiante1 = new Estudiante("Cristian", 0, 2.5);
+        System.out.println();
+        estudiante1.mostrarInformacion();
 
     }
 }
