@@ -36,11 +36,12 @@ public class CuentaBancaria {
     }
 
     public void retirar(double cantidad) {
-        if (cantidad <= saldo) {
+        if (cantidad > 0 && cantidad <= saldo) {
             saldo -= cantidad;
-        } else if (cantidad > saldo) {
+        } else if (cantidad < 0) {
+            System.out.println("La cantidad a retirar debe ser mayor a 0");    
+        }else{
             System.out.println("Fondos insuficientes para retirar " + cantidad);
-            
         }
     }
 }

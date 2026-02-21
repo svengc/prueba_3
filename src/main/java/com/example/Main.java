@@ -21,7 +21,7 @@ public class Main {
         cuenta1.depositar(200);
         System.out.println(cuenta1.getSaldo());
         System.out.println();
-        System.out.println("Retirando 200...");
+        System.out.println("Retirando");
         cuenta1.retirar(1000);
         System.out.println(cuenta1.getSaldo());
         System.out.println();
